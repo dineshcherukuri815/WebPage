@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            display:flex;
+            align-items: center;
+            font-family: sans-serif;
+            justify-content: center;
+            min-height: 100vh;
+            line-height: 1.5;
+            background:palegreen;
+            flex-direction: column;
+            
+        }
+        .hey{
+            background-color:whitesmoke;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            padding: 10px 20px;
+            text-align:center;
+        }
+        h1{
+            color:red;
+        }
+        h3{
+            color:rgb(136, 75, 75);
+        }
+        button{
+            padding:15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            background-color: darkgreen;
+            width:100%;
+            font-size:15px;
+        }
+        label{
+           display:block;
+           width:100%;
+           margin-top:10px;
+           margin-bottom: 10px;
+           text-align: left;
+           color:green;
+
+        }
+        input {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hey">
+
+        <h1>Login Page</h1>
+        <h3>Enter your login Credentials</h3>
+    
+    <form action="hello">
+        
+            <label for="first">Username:</label>
+            <input type="text" id="first" name="first" placeholder="Enter user name" required></br>
+            <label for="second">Password:</label>
+            <input type="password" id="second" name="second" placeholder="Enter your password" required></br>
+
+            <button type="submit">Submit</button>
+         
+    </form>
+    <div>
+
+        <p>Not Registred?
+        <a href="registration.html" style="text-decoration: none;">
+            Create an account
+        </a>
+        </p>
+
+    </div>
+</body>
+</html>
